@@ -1,5 +1,5 @@
 {% set name = "flytekitplugins-pandera" %}
-{% set version = "1.0.5" %}
+{% set version = "1.1.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flytekitplugins-pandera-{{ version }}.tar.gz
-  sha256: e337aa71de7c7fd9accabd50511393a062d2cb31e9c763c11e9e65ff0b16263d
+  sha256: f528d3ef56006d19b9fe7ac84bdff21f215e3057888e26c5b032e1aa01d90488
 
 build:
   number: 0
@@ -36,7 +36,7 @@ about:
   home: https://pypi.org/project/flytekitplugins-pandera/
   summary: Pandera plugin for flytekit
   license: Apache-2.0
-  license_file: 
+  license_file:
     - LICENSE
     - NOTICE
   description: |
