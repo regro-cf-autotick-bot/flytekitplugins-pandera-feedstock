@@ -1,5 +1,5 @@
 {% set name = "flytekitplugins-pandera" %}
-{% set version = "1.1.2" %}
+{% set version = "1.1.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flytekitplugins-pandera-{{ version }}.tar.gz
-  sha256: 12b2390722021aa6e7151fbbe737a951eea45f30b013f36b3de40bb861dc63be
+  sha256: 7aebcb8f4477194ebdb7c2cfc9557dc700c206cb09b9b93b08981f3abe1c5789
 
 build:
   number: 0
