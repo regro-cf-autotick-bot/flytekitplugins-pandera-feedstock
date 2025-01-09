@@ -7,20 +7,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flytekitplugins-pandera-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/flytekitplugins-pandera-{{ version }}.tar.gz
   sha256: bd72536745f9a09c5a7d31dda79387bd755ee23d6ea81e959cec4048910c2263
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - flytekit >=1.0.0b3,<1.2.0
     - pandera >=0.7.1
 
@@ -31,6 +31,7 @@ test:
   #   - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/flytekitplugins-pandera/
